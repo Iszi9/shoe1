@@ -1,4 +1,5 @@
- import 'package:cloud_firestore/cloud_firestore.dart';
+import 'package:cloud_firestore/cloud_firestore.dart';
+import 'package:flutter/cupertino.dart';
 import 'package:get/get.dart';
 
 import '../model/product.dart';
@@ -7,6 +8,11 @@ class HomeController extends GetxController{
 
   FirebaseFirestore firestore = FirebaseFirestore.instance;
   late CollectionReference productCollection;
+
+  TextEditingController productNameCtrl = TextEditingController();
+  TextEditingController productDescriptionCtrl = TextEditingController();
+  TextEditingController productImgCtrl = TextEditingController();
+  TextEditingController productPriceCtrl = TextEditingController();
 
 
   @override

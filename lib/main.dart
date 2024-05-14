@@ -6,9 +6,9 @@ import 'controller/home_controller.dart';
 import 'firebase_options.dart';
 import 'pages/home_page.dart';
 
-void main() {
+Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
-  Firebase.initializeApp(options: firebaseOptions);
+ await Firebase.initializeApp(options: firebaseOptions);
   //? registering my controller
   Get.put(HomeController());
   runApp(const MyApp());

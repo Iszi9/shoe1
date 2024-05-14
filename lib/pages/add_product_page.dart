@@ -10,7 +10,7 @@ class AddProductPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return GetBuilder<HomeController>(builder: (Ctrl) {
+    return GetBuilder<HomeController>(builder: (ctrl) {
       return Scaffold(
         appBar: AppBar(
           title: Text('Add Product'),
@@ -97,7 +97,9 @@ class AddProductPage extends StatelessWidget {
                         backgroundColor: Colors.purple,
                         foregroundColor: Colors.white
                     ),
-                    onPressed: () {}, child: Text('Add Product'))
+                    onPressed: () {
+                      ctrl.addProduct();
+                    }, child: Text('Add Product'))
               ],
             ),
           ),
