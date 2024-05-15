@@ -30,6 +30,7 @@ class AddProductPage extends StatelessWidget {
                       fontWeight: FontWeight.bold),
                 ),
                 TextField(
+                  controller: ctrl.productNameCtrl,
                   decoration: InputDecoration(
                       border: OutlineInputBorder(
                           borderRadius: BorderRadius.circular(10)),
@@ -38,6 +39,7 @@ class AddProductPage extends StatelessWidget {
                 ),
                 SizedBox(height: 10),
                 TextField(
+                  controller: ctrl.productDescriptionCtrl,
                   decoration: InputDecoration(
                       border: OutlineInputBorder(
                           borderRadius: BorderRadius.circular(10)),
@@ -47,6 +49,7 @@ class AddProductPage extends StatelessWidget {
                 ),
                 SizedBox(height: 10),
                 TextField(
+                  controller: ctrl.productImgCtrl,
                   decoration: InputDecoration(
                       border: OutlineInputBorder(
                           borderRadius: BorderRadius.circular(10)),
@@ -55,6 +58,7 @@ class AddProductPage extends StatelessWidget {
                 ),
                 SizedBox(height: 10),
                 TextField(
+                  controller: ctrl.productPriceCtrl,
                   decoration: InputDecoration(
                       border: OutlineInputBorder(
                           borderRadius: BorderRadius.circular(10)),
